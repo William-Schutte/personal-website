@@ -1,0 +1,88 @@
+.about {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(220, 20, 60, .8);
+}
+
+.about__content {
+    display: grid;
+    margin: 50px 30px;
+    grid-template-areas: 
+        "intro  resume"
+        "skills contact";
+    grid-template-columns: 5fr 2fr;
+    gap: 30px;
+    max-width: 1200px;  
+}
+
+.about__intro {
+    grid-area: "intro";
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-position: 0 10px;
+}
+
+.about__lead {
+    font-size: larger;
+    font-weight: bold;
+    margin: 10px 0 8px 70px;
+}
+
+.about__lead-right {
+    margin: 10px 70px 8px 0;
+}
+
+.about__text {
+    margin-left: 70px;
+    margin-bottom: 8px;
+}
+
+.about__text-right {
+    margin-left: 0;
+    margin-right: 70px;
+    text-align: justify;
+}
+
+.about__resume {
+    grid-area: "resume";
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-position: 100% 12px;
+}
+
+.about__skills {
+    grid-area: "skills";
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-position: 0 12px;
+}
+
+.about__skill-icons {
+    display: flex;
+    margin: 20px 0 30px 90px;
+}
+
+.about__skill-icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.about__contact {
+    grid-area: "contact";
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-position: 100% 12px;
+}
+
+.about__button {
+}

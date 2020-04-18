@@ -1,0 +1,20 @@
+@import url(../vendor/reset.css);
+
+@import url(../blocks/navbar.css);
+@import url(../blocks/header.css); 
+@import url(../blocks/about.css);
+@import url(../blocks/portfolio.css);
+
+.page {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    line-height: 26px;
+    color: white;
+    text-decoration: none;
+    background-image: url(../images/fabian-grohs-oZ61KFUQsus-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 -250px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
