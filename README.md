@@ -8,16 +8,12 @@ ground for design and coding strategies with HTML, CSS, and JS.
 -----
 
 ### April 2020 Todo:
-
-  Upload/link portfolio items/github repos
-  Finish Flutter portfolio item
-  Make design responsive for mobile
+- Upload/link portfolio items/github repos
+- Finish Flutter portfolio item
+- Make design responsive for mobile
   
 ### April 2020 Done:
-
-  Finish content layout: 
-    About
-    Portfolio
-    Contact
-    Footer
-  Decide on final fonts and colors/theme
+- Finish content layout (About, Portfolio, Contact, Footer)
+- Decide on final fonts and colors/theme
+- HTML Skeleton
+- General CSS styles and link animations
