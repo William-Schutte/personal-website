@@ -6,6 +6,8 @@
 @import url(../blocks/about.css);
 @import url(../blocks/portfolio.css);
 @import url(../blocks/card.css);
+@import url(../blocks/contact.css);
+@import url(../blocks/footer.css);
 
 
 /* Creates smooth scroll effect without JS */
@@ -20,7 +22,7 @@ html {
 
 .page {
     font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 26px;
     color: white;
     text-decoration: none;

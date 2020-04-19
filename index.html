@@ -20,8 +20,7 @@
             <ul class="navbar__links">
                 <li class="navbar__item"><a class="navbar__link navbar__hover" href="#about">About</a></li>
                 <li class="navbar__item"><a class="navbar__link navbar__hover" href="#portfolio">Portfolio</a></li>
-                <li class="navbar__item"><a class="navbar__link navbar__hover" href="#">Experience</a></li>
-                <li class="navbar__item"><a class="navbar__link navbar__hover" href="#">Contact</a></li>
+                <li class="navbar__item"><a class="navbar__link navbar__hover" href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -29,7 +28,7 @@
     <header class="header">
         <h1 class="header__title">William Schutte</h1>
         <h2 class="header__subtitle">Developer, B.S. Engineering</h2>
-        <a class="header__pointer header__hover" href="#about">&#711;</a>
+        <a class="header__pointer header__hover" href="#about"></a>
     </header>
 
     <section class="about">
@@ -46,8 +45,8 @@
             </div>
             <div class="about__resume" style="background-image: url(../images/resume-dl-icon.svg);">
                 <h3 class="about__lead about__lead-right">My Resume</h3>
-                <p class="about__text about__text-right">See what I've done!</p>
-                <div class="about__resume-icon" style="background-image: url(../images/resume-icon.png);"></div>
+                <p class="about__text">See what I've done!</p>
+                <a class="about__resume-icon" style="background-image: url(../images/resume-icon.png);" href="./pages/WS Resume.pdf" target="_blank"></a>
             </div>
             <div class="about__skills" style="background-image: url(../images/dev-icon.svg);">
                 <h3 class="about__lead">My Skills</h3>
@@ -56,7 +55,7 @@
                 <ul class="about__skill-icons">
                     <li class="about__skill-icon" style="background-image: url(../images/JS-icon.png);"></li>
                     <li class="about__skill-icon" style="background-image: url(../images/nodejs-icon.png);"></li>
-                    <li class="about__skill-icon" style="background-image: url(../images/React-icon2.png);"></li>
+                    <li class="about__skill-icon" style="background-image: url(../images/react-icon.png);"></li>
                     <li class="about__skill-icon" style="background-image: url(../images/flutter-icon.svg);"></li>
                     <li class="about__skill-icon" style="background-image: url(../images/dart-icon.svg);"></li>
                     <li class="about__skill-icon" style="background-image: url(../images/HTML5-icon.svg);"></li>
@@ -65,10 +64,11 @@
                 </ul>
                 <p class="about__text">See some of my projects below!</p>
             </div>
-            <div class="about__contact" style="background-image: url(../images/email-icon.svg);">
+            <div class="about__contact" style="background-image: url(../images/email-icon-1.png);">
                 <h3 class="about__lead about__lead-right">Contact Me</h3>
-                <p class="about__text about__text-right">I'm currently freelancing in the web-design space and looking for full time positions.
+                <p class="about__text">I'm currently freelancing in the web-design space and looking for full time positions.
                     Drop me a line!</p>
+                <a class="about__contact-link" href="#contact"></a>
             </div>
         </div>
     </section>
@@ -121,9 +121,33 @@
                     <li class="card__icon" style="background-image: url(../images/JS-icon.png);"></li>
                 </ul>
             </li>
-            
-        
         </ul>
+    </section>
+
+    <section class="contact">
+        <div class="page__anchor" id="contact"></div>
+        <h2 class="contact__title">Contact Me</h2>
+        <p class="contact__text">Looking for a part-time or full-time developer? Need help with your website? Just want 
+            to see more of my work? Call, text, or email and I'll get back to you as soon as possible!</p>
+        <div class="contact__methods">
+            <a class="contact__method" href="mailto:williamdschutte@gmail.com?Subject=Will,%20saw%20your%20website!" target="_blank">
+                <div class="contact__icon" style="background-image: url(../images/email-icon-2.png);"></div>
+                <p class="contact__link">WilliamDSchutte</br>@gmail.com</p>
+            </a>
+            <a class="contact__method">
+                <div class="contact__icon" style="background-image: url(../images/phone-icon-white.png);"></div>
+                <p class="contact__link">+1 (305) 877 - 8459</p>
+            </a>
+            <a class="contact__method" href="https://github.com/William-Schutte" target="_blank">
+                <div class="contact__icon" style="background-image: url(../images/github-icon.png);"></div>
+                <p class="contact__link">/William-Schutte</p>
+            </a>
+        </div>
+
+    </section>
+
+    <section class="footer">
+        <p class="footer__copyright">&copy;2020 William Schutte</p>
     </section>
 </body>
 </html>

@@ -2,12 +2,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(220, 20, 60, .9);
+    background-color: rgba(190, 12, 48, 0.8);
+    /* background-color: rgba(220, 20, 60, .8); */
 }
 
 .about__title {
     text-align: center;
-    margin: 80px 50px 100px;
+    margin: 80px 50px;
     font-size: 44px;
     line-height: 44px;
     font-weight: bold;
@@ -20,7 +21,7 @@
         "intro  resume"
         "skills contact";
     grid-template-columns: 3fr 2fr;
-    gap: 80px 40px;
+    gap: 50px;
     max-width: 1000px;  
 }
 
@@ -32,24 +33,17 @@
 }
 
 .about__lead {
-    font-size: larger;
+    font-size: 24px;
     font-weight: bold;
-    margin: 10px 0 8px 70px;
+    margin: 34px 0 20px 64px;
 }
 
 .about__lead-right {
-    margin: 10px 70px 8px 0;
+    margin: 34px 64px 20px 0;
 }
 
 .about__text {
-    margin-left: 70px;
-    margin-bottom: 8px;
-    text-align: justify;
-}
-
-.about__text-right {
-    margin-left: 0;
-    margin-right: 70px;
+    margin-bottom: 12px;
     text-align: justify;
 }
 
@@ -63,7 +57,19 @@
     background-position: 100% 12px;
 }
 
-.about__resume-icon {}
+.about__resume-icon {
+    width: 138px;
+    height: 177px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* border: 2px solid white; */
+    box-shadow: 5px 5px 10px black;
+    transition: opacity .2s linear;
+}
+
+.about__resume-icon:hover {
+    opacity: .8;
+}
 
 .about__skills {
     grid-area: "skills";
@@ -75,7 +81,7 @@
 .about__skill-icons {
     display: flex;
     align-items: center;
-    margin: 20px 0 30px 90px;
+    margin: 20px 20px 30px;
     padding-left: 20px;
     background-color: rgba(0,0,0,.5);
     border-radius: 8px;
@@ -100,6 +106,19 @@
     background-size: 50px;
     background-repeat: no-repeat;
     background-position: 100% 12px;
+}
+
+.about__contact-link {
+    width: 50px;
+    height: 50px;
+    background-image: url(../images/down-white.png);
+    background-size: contain;
+    margin: 0px auto;
+    transition: background-image .2s ease-in-out;
+}
+
+.about__contact-link:hover {
+    background-image: url(../images/down-gray.png);
 }
 
 .about__button {
