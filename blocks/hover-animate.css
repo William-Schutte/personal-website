@@ -1,0 +1,8 @@
+.hover-animate {
+    transition: background-color .2s linear;
+}
+
+.hover-animate:hover {
+    background-color: rgb(219, 152, 152);
+    cursor: pointer;
+}

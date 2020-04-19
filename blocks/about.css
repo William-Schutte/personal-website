@@ -1,17 +1,26 @@
 .about {
     display: flex;
-    justify-content: center;
-    background-color: rgba(220, 20, 60, .8);
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(220, 20, 60, .9);
+}
+
+.about__title {
+    text-align: center;
+    margin: 100px 50px;
+    font-size: 44px;
+    line-height: 44px;
+    font-weight: bold;
 }
 
 .about__content {
     display: grid;
-    margin: 50px 30px;
+    margin: 0 30px 50px;
     grid-template-areas: 
         "intro  resume"
         "skills contact";
     grid-template-columns: 5fr 2fr;
-    gap: 30px;
+    gap: 80px 30px;
     max-width: 1200px;  
 }
 
@@ -35,6 +44,7 @@
 .about__text {
     margin-left: 70px;
     margin-bottom: 8px;
+    text-align: justify;
 }
 
 .about__text-right {
@@ -53,6 +63,8 @@
     background-position: 100% 12px;
 }
 
+.about__resume-icon {}
+
 .about__skills {
     grid-area: "skills";
     background-size: 50px;
@@ -62,7 +74,13 @@
 
 .about__skill-icons {
     display: flex;
+    align-items: center;
     margin: 20px 0 30px 90px;
+    padding-left: 20px;
+    background-color: rgba(0,0,0,.5);
+    border-radius: 8px;
+    height: 90px;
+    width: min-content
 }
 
 .about__skill-icon {

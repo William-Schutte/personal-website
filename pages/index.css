@@ -1,9 +1,22 @@
 @import url(../vendor/reset.css);
 
+@import url(../blocks/hover-animate.css);
 @import url(../blocks/navbar.css);
 @import url(../blocks/header.css); 
 @import url(../blocks/about.css);
 @import url(../blocks/portfolio.css);
+@import url(../blocks/card.css);
+
+
+/* Creates smooth scroll effect without JS */
+html {
+    scroll-behavior: smooth;
+}
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
 
 .page {
     font-family: 'Montserrat', sans-serif;
@@ -15,6 +28,15 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0 -250px;
+    background-color: #121315;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+.page__anchor {
+    display: block; 
+    visibility: hidden;
+    position: relative;
+    top: -66px;
+    height: 0;
 }

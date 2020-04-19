@@ -1,8 +1,23 @@
-.potfolio {
+.portfolio {
     display: flex;
     justify-content: center;
-    background-color: white;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, .1);
 }
 
 .portfolio__title {
+    text-align: center;
+    margin: 100px 50px;
+    font-size: 44px;
+    line-height: 44px;
+    font-weight: bold;
+}
+
+.portfolio__grid {
+    display: grid;
+    align-self: center;
+    margin-bottom: 100px;
+    gap: 14px;
+    width: 1240px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
