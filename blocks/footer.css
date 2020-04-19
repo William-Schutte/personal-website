@@ -3,11 +3,10 @@
     display: flex;
     color: rgb(50, 50, 50);
     display: flex;
-    max-width: 1600px;
     padding: 20px;
 }
 
 .footer__copyright {
     display: flex;
-    margin-left: auto;
+    margin: 0 auto;
 }
