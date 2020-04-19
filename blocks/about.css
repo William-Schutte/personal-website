@@ -7,7 +7,7 @@
 
 .about__title {
     text-align: center;
-    margin: 100px 50px;
+    margin: 80px 50px 100px;
     font-size: 44px;
     line-height: 44px;
     font-weight: bold;
@@ -19,9 +19,9 @@
     grid-template-areas: 
         "intro  resume"
         "skills contact";
-    grid-template-columns: 5fr 2fr;
-    gap: 80px 30px;
-    max-width: 1200px;  
+    grid-template-columns: 3fr 2fr;
+    gap: 80px 40px;
+    max-width: 1000px;  
 }
 
 .about__intro {

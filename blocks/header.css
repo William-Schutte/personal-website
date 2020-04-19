@@ -4,10 +4,11 @@
     align-items: center;
     background-color: rgba(0, 0, 0, .5);
     color: white;
+    height: 100vh;
 }
 
 .header__title {
-    margin-top: 20%;
+    margin-top: 35vh;
     font-size: 80px;
     line-height: 80px;
     font-weight: 700;
@@ -18,5 +19,20 @@
     font-size: 50px;
     line-height: 80px;
     font-weight: 700;
-    margin-bottom: 21%;
+    margin-bottom: 100px;
+}
+
+.header__pointer {
+    font-size: 144px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    transition: color .2s ease-in-out;
+}
+
+.header__pointer:hover {
+    color: crimson;
 }
