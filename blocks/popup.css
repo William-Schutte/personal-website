@@ -1,26 +1,83 @@
 .popup {
     display: none;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    color: white;
+    color: black;
     background-color: rgba(0,0,0,.7);
 }
 
 .popup_opened {
+    display: block;
+}
+
+.popup__underlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.popup__content {
     display: flex;
+    margin: 20vh auto;
+    flex-direction: column;
+    background-color: rgba(255,255,255,.85);
+    max-width: 800px;
+    height: 600px;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.popup__row {
+    display: flex;
+    margin-bottom: 12px;
 }
 
 .popup__title {
+    font-size: 44px;
+    line-height: 48px;
+    font-weight: bold;
+}
+
+.popup__close-btn {
+    display: flex;
+    margin-left: auto;
+    background-image: url(../images/down-black.png);
+    transform: rotate(270deg);
+    background-size: contain;
+    height: 40px;
+    width: 40px;
+    transition: background-image .2s ease-in-out;
+}
+
+.popup__close-btn:hover {
+    background-image: url(../images/down-crimson.png);
+    cursor: pointer;
+}
+
+.popup__icons {
+    display: flex;
+    margin: 0 20px 0 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgba(0,0,0,.5);
+    border-radius: 8px;
     
 }
 
-.popup__subtitle {
-
+.popup__image-slider {
+    display: flex;
+    width: calc(100% - 180px);
+    height: 300px;
+    background-color: black;
+    border-radius: 8px;
 }
 
-.popup__text {}
+.popup__text {
+    margin: 20px 20px 0;
+}
 
-.popup__icons {}

@@ -91,8 +91,11 @@
                 </ul>
                 <details class="card__details">
                     <p class="image-urls">a</p>
-                    <p class="card__text1">b</p>
-                    <p class="card__text2">c</p>
+                    <p class="card__text1">I started developing this site about halfway through my Web-Dev code camp 
+                        when I had a solid foundational understanding of HTML and CSS, and when I was beginning to 
+                        experiment with JS.</p>
+                    <p class="card__text2">This site is still a work in progress, but I am quickly integrating more 
+                        features and content.</p>
                 </details>
             </li>
             <li class="card card2 hover-animate">
@@ -105,6 +108,15 @@
                     <li class="card__icon" style="background-image: url(../images/icons/CSS3-icon.svg);"></li>
                     <li class="card__icon" style="background-image: url(../images/icons/figma-icon.png); background-size: 100%;"></li>
                 </ul>
+                <details class="card__details">
+                    <p class="image-urls">a</p>
+                    <p class="card__text1">One of the longer projects in my code bootcamp, this page was meticulously constructed 
+                        from a design spec on Figma. The desing is responsive, incorporating aesthetic design at 6 key resolions/
+                        screen sizes.</p>
+                    <p class="card__text2">This page was built with BEM methodology, including nested file structure and 
+                        tree-like organization of all CSS classes.</p>
+                    <p class="card__code-link"></p>
+                </details>
             </li>
             <li class="card card3 hover-animate">
                 <h3 class="card__title">Flutter App</h3>
@@ -116,6 +128,11 @@
                     <li class="card__icon" style="background-image: url(../images/icons/dart-icon.svg);"></li>
                     <li class="card__icon" style="background-image: url(../images/icons/firebase-icon.png);"></li>
                 </ul>
+                <details class="card__details">
+                    <p class="image-urls">a</p>
+                    <p class="card__text1">b</p>
+                    <p class="card__text2">c</p>
+                </details>
             </li>
             <li class="card card4 hover-animate">
                 <h3 class="card__title">Personal Portfolio Page</h3>
@@ -127,6 +144,11 @@
                     <li class="card__icon" style="background-image: url(../images/icons/CSS3-icon.svg);"></li>
                     <li class="card__icon" style="background-image: url(../images/icons/JS-icon.png);"></li>
                 </ul>
+                <details class="card__details">
+                    <p class="image-urls">a</p>
+                    <p class="card__text1">b</p>
+                    <p class="card__text2">c</p>
+                </details>
             </li>
         </ul>
     </section>
@@ -158,18 +180,23 @@
     </section>
 
     <!-- Portfolio Popup Window - Includes more images, link to view, link to code, description, languages/frames -->
-    <section class="popup popup_opened">
+    <section class="popup">
+        <div class="popup__underlay"></div>
         <div class="popup__content">
-            <div class="popup__image-slider">
-
+            <div class="popup__row">
+                <h2 class="popup__title"></h2>
+                <btn class="popup__close-btn"></btn>
             </div>
-            <h2 class="popup__title"></h2>
-            <h3 class="popup__subtitle"></h3>
-            <p class="popup__text"></p>
-            <ul class="popup__icons"></div>
+            <div class="popup__row">
+                <ul class="popup__icons"></ul>
+                <div class="popup__image-slider"></div>
+            </div>
+            
+            <p class="popup__text text1"></p>
+            <p class="popup__text text2"></p>
+            <a class="popup__link link1">See this project in action</a>
+            <a class="popup__link link2">See this project's code</a>
         </div>
-        
-
     </section>
 
     <script src="./scripts/index.js"></script>
