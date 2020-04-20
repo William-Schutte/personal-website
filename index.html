@@ -7,7 +7,6 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='./pages/index.css'>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
-    <!-- <script src='main.js'></script> -->
 </head>
 
 
@@ -25,17 +24,19 @@
         </div>
     </nav>
 
+    <!-- Header Block - Name and Title -->
     <header class="header">
         <h1 class="header__title">William Schutte</h1>
         <h2 class="header__subtitle">Developer, B.S. Engineering</h2>
         <a class="header__pointer header__hover" href="#about"></a>
     </header>
 
+    <!-- About Block - Contains summary, skill, resume, and contact link -->
     <section class="about">
         <div class="page__anchor" id="about"></div>
         <h2 class="about__title">About Me</h2>
         <div class="about__content">
-            <div class="about__intro" style="background-image: url(../images/profile-icon.svg);">
+            <div class="about__intro" style="background-image: url(../images/icons/profile-icon.svg);">
                 <h3 class="about__lead">My Story</h3>
                 <p class="about__text">I'm William, an adaptable front-end software engineer with a passion for mathematics and science.</p>
                 <p class="about__text">As a developer with an engineering background, topics encountered in my coding studies like linear algebra, 
@@ -43,28 +44,28 @@
                     myself to continuously learn and grow, even after the degree was hung on the wall.
                     </p>
             </div>
-            <div class="about__resume" style="background-image: url(../images/resume-dl-icon.svg);">
+            <div class="about__resume" style="background-image: url(../images/icons/resume-dl-icon.svg);">
                 <h3 class="about__lead about__lead-right">My Resume</h3>
-                <p class="about__text">See what I've done!</p>
-                <a class="about__resume-icon" style="background-image: url(../images/resume-icon.png);" href="./pages/WS Resume.pdf" target="_blank"></a>
+                <!-- <p class="about__text">See what I've done!</p> -->
+                <a class="about__resume-icon" style="background-image: url(../images/icons/resume-icon.png);" href="./pages/WS Resume.pdf" target="_blank"></a>
             </div>
-            <div class="about__skills" style="background-image: url(../images/dev-icon.svg);">
+            <div class="about__skills" style="background-image: url(../images/icons/dev-icon.svg);">
                 <h3 class="about__lead">My Skills</h3>
                 <p class="about__text">I now specialize in front-end development with expertise in JavaScript, React, Node.js, Flutter, HTML, and CSS.</p>
                 <p class="about__text">Languages and Frameworks:</p>
                 <ul class="about__skill-icons">
-                    <li class="about__skill-icon" style="background-image: url(../images/JS-icon.png);"></li>
-                    <li class="about__skill-icon" style="background-image: url(../images/nodejs-icon.png);"></li>
-                    <li class="about__skill-icon" style="background-image: url(../images/react-icon.png);"></li>
-                    <li class="about__skill-icon" style="background-image: url(../images/flutter-icon.svg);"></li>
-                    <li class="about__skill-icon" style="background-image: url(../images/dart-icon.svg);"></li>
-                    <li class="about__skill-icon" style="background-image: url(../images/HTML5-icon.svg);"></li>
-                    <li class="about__skill-icon" style="background-image: url(../images/CSS3-icon.svg);"></li>
-                    <li class="about__skill-icon" style="background-image: url(../images/matlab-logo.png); border-radius: 50px"></li>
+                    <li class="about__skill-icon" style="background-image: url(../images/icons/JS-icon.png);"></li>
+                    <li class="about__skill-icon" style="background-image: url(../images/icons/nodejs-icon.png);"></li>
+                    <li class="about__skill-icon" style="background-image: url(../images/icons/react-icon.png);"></li>
+                    <li class="about__skill-icon" style="background-image: url(../images/icons/flutter-icon.svg);"></li>
+                    <li class="about__skill-icon" style="background-image: url(../images/icons/dart-icon.svg);"></li>
+                    <li class="about__skill-icon" style="background-image: url(../images/icons/HTML5-icon.svg);"></li>
+                    <li class="about__skill-icon" style="background-image: url(../images/icons/CSS3-icon.svg);"></li>
+                    <li class="about__skill-icon" style="background-image: url(../images/icons/matlab-logo.png); border-radius: 50px"></li>
                 </ul>
                 <p class="about__text">See some of my projects below!</p>
             </div>
-            <div class="about__contact" style="background-image: url(../images/email-icon-1.png);">
+            <div class="about__contact" style="background-image: url(../images/icons/email-icon-1.png);">
                 <h3 class="about__lead about__lead-right">Contact Me</h3>
                 <p class="about__text">I'm currently freelancing in the web-design space and looking for full time positions.
                     Drop me a line!</p>
@@ -73,57 +74,64 @@
         </div>
     </section>
 
+    <!-- Portfolio Block - Contains clickable portfolio cards that popup with more detail  -->
     <section class="portfolio">
         <div class="page__anchor" id="portfolio"></div>
         <h2 class="portfolio__title">Portfolio</h2>
         <ul class="portfolio__grid">
-            <li class="card hover-animate">
+            <li class="card card1 hover-animate">
                 <h3 class="card__title">Personal Portfolio Page</h3>
-                <div class="card__image" style="background-image: url(../images/card-personal-page.png);"></div>
+                <div class="card__image" style="background-image: url(../images/portfolio-cards/card-personal-page.png);"></div>
                 <p class="card__description">This very page was one of my first web-dev projects.</p>
                 <ul class="card__icons">
-                    <li class="card__icon" style="background-image: url(../images/dev-icon.svg);"></li>
-                    <li class="card__icon" style="background-image: url(../images/HTML5-icon.svg);"></li>
-                    <li class="card__icon" style="background-image: url(../images/CSS3-icon.svg);"></li>
-                    <li class="card__icon" style="background-image: url(../images/JS-icon.png);"></li>
+                    <li class="card__icon" style="background-image: url(../images/icons/dev-icon.svg);"></li>
+                    <li class="card__icon" style="background-image: url(../images/icons/HTML5-icon.svg);"></li>
+                    <li class="card__icon" style="background-image: url(../images/icons/CSS3-icon.svg);"></li>
+                    <li class="card__icon" style="background-image: url(../images/icons/JS-icon.png);"></li>
                 </ul>
+                <details class="card__details">
+                    <p class="image-urls">a</p>
+                    <p class="card__text1">b</p>
+                    <p class="card__text2">c</p>
+                </details>
             </li>
-            <li class="card hover-animate">
-                <h3 class="card__title">Portland to Portland Project</h3>
-                <div class="card__image" style="background-image: url(../images/portland.png);"></div>
-                <p class="card__description">Fully responsive phone to desktop design pulled from a brief on Figma.</p>
+            <li class="card card2 hover-animate">
+                <h3 class="card__title">Portland to Portland</h3>
+                <div class="card__image" style="background-image: url(../images/portfolio-cards/card-portland.png);"></div>
+                <p class="card__description">Fully responsive webpage with mobile to desktop design pulled from a brief on Figma.</p>
                 <ul class="card__icons">
-                    <li class="card__icon" style="background-image: url(../images/dev-icon.svg);"></li>
-                    <li class="card__icon" style="background-image: url(../images/HTML5-icon.svg);"></li>
-                    <li class="card__icon" style="background-image: url(../images/CSS3-icon.svg);"></li>
-                    <li class="card__icon" style="background-image: url(../images/figma-icon.png); background-size: 100%;"></li>
+                    <li class="card__icon" style="background-image: url(../images/icons/dev-icon.svg);"></li>
+                    <li class="card__icon" style="background-image: url(../images/icons/HTML5-icon.svg);"></li>
+                    <li class="card__icon" style="background-image: url(../images/icons/CSS3-icon.svg);"></li>
+                    <li class="card__icon" style="background-image: url(../images/icons/figma-icon.png); background-size: 100%;"></li>
                 </ul>
             </li>
-            <li class="card hover-animate">
+            <li class="card card3 hover-animate">
                 <h3 class="card__title">Flutter App</h3>
-                <div class="card__image" style="background-image: url(../images/card-personal-page.png);"></div>
+                <div class="card__image" style="background-image: url(../images/portfolio-cards/card-personal-page.png);"></div>
                 <p class="card__description">Mobile app for iOS and Android using Dart/Flutter linked to Firebase.</p>
                 <ul class="card__icons">
-                    <li class="card__icon" style="background-image: url(../images/dev-icon.svg);"></li>
-                    <li class="card__icon" style="background-image: url(../images/flutter-icon.svg);"></li>
-                    <li class="card__icon" style="background-image: url(../images/dart-icon.svg);"></li>
-                    <li class="card__icon" style="background-image: url(../images/firebase-icon.png);"></li>
+                    <li class="card__icon" style="background-image: url(../images/icons/dev-icon.svg);"></li>
+                    <li class="card__icon" style="background-image: url(../images/icons/flutter-icon.svg);"></li>
+                    <li class="card__icon" style="background-image: url(../images/icons/dart-icon.svg);"></li>
+                    <li class="card__icon" style="background-image: url(../images/icons/firebase-icon.png);"></li>
                 </ul>
             </li>
-            <li class="card hover-animate">
+            <li class="card card4 hover-animate">
                 <h3 class="card__title">Personal Portfolio Page</h3>
-                <div class="card__image" style="background-image: url(../images/card-personal-page.png);"></div>
+                <div class="card__image" style="background-image: url(../images/portfolio-cards/card-personal-page.png);"></div>
                 <p class="card__description">This very page was one of my first web-dev projects.</p>
                 <ul class="card__icons">
-                    <li class="card__icon" style="background-image: url(../images/dev-icon.svg);"></li>
-                    <li class="card__icon" style="background-image: url(../images/HTML5-icon.svg);"></li>
-                    <li class="card__icon" style="background-image: url(../images/CSS3-icon.svg);"></li>
-                    <li class="card__icon" style="background-image: url(../images/JS-icon.png);"></li>
+                    <li class="card__icon" style="background-image: url(../images/icons/dev-icon.svg);"></li>
+                    <li class="card__icon" style="background-image: url(../images/icons/HTML5-icon.svg);"></li>
+                    <li class="card__icon" style="background-image: url(../images/icons/CSS3-icon.svg);"></li>
+                    <li class="card__icon" style="background-image: url(../images/icons/JS-icon.png);"></li>
                 </ul>
             </li>
         </ul>
     </section>
 
+    <!-- Contact Block - Means of contacting me (email, phone, github) -->
     <section class="contact">
         <div class="page__anchor" id="contact"></div>
         <h2 class="contact__title">Contact Me</h2>
@@ -131,24 +139,40 @@
             to see more of my work? Call, text, or email and I'll get back to you as soon as possible!</p>
         <div class="contact__methods">
             <a class="contact__method" href="mailto:williamdschutte@gmail.com?Subject=Will,%20saw%20your%20website!" target="_blank">
-                <div class="contact__icon" style="background-image: url(../images/email-icon-2.png);"></div>
+                <div class="contact__icon" style="background-image: url(../images/icons/email-icon-2.png);"></div>
                 <p class="contact__link">WilliamDSchutte</br>@gmail.com</p>
             </a>
             <a class="contact__method">
-                <div class="contact__icon" style="background-image: url(../images/phone-icon-white.png);"></div>
+                <div class="contact__icon" style="background-image: url(../images/icons/phone-icon-white.png);"></div>
                 <p class="contact__link">+1 (305) 877 - 8459</p>
             </a>
             <a class="contact__method" href="https://github.com/William-Schutte" target="_blank">
-                <div class="contact__icon" style="background-image: url(../images/github-icon.png);"></div>
+                <div class="contact__icon" style="background-image: url(../images/icons/github-icon.png);"></div>
                 <p class="contact__link">/William-Schutte</p>
             </a>
         </div>
-
     </section>
 
     <section class="footer">
         <p class="footer__copyright">&copy;2020 William Schutte</p>
     </section>
+
+    <!-- Portfolio Popup Window - Includes more images, link to view, link to code, description, languages/frames -->
+    <section class="popup popup_opened">
+        <div class="popup__content">
+            <div class="popup__image-slider">
+
+            </div>
+            <h2 class="popup__title"></h2>
+            <h3 class="popup__subtitle"></h3>
+            <p class="popup__text"></p>
+            <ul class="popup__icons"></div>
+        </div>
+        
+
+    </section>
+
+    <script src="./scripts/index.js"></script>
 </body>
 </html>
 

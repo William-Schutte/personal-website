@@ -7,15 +7,17 @@
     box-shadow: 5px 5px 5px black;
 }
 
-.card:hover {
-    
-}
-
 .card__title {
+    display: inline-block;
     color: black;
-    margin: 14px 20px 10px;
+    margin: 18px 20px 8px;
+    max-width: 364px;
+    font-size: 24px;
     letter-spacing: 2px;
     font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .card__image {
@@ -59,4 +61,8 @@
 
 .card__icon:last-of-type {
     margin-right: 0;
+}
+
+.card__details {
+    display: none;
 }
