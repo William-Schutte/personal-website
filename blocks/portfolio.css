@@ -18,11 +18,24 @@
 .portfolio__grid {
     display: grid;
     align-self: center;
-    margin-bottom: 100px;
+    margin: 0 24px 100px;
     gap: 14px;
-    width: 1240px;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    max-width: 1240px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
+
+@media screen and (max-width: 1024px) {
+    .portfolio__grid {
+        grid-template-columns: repeat(2, minmax(300px, 1fr));
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .portfolio__grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
 
 /* Temporary Construction Classes */
 .portfolio__construction {

@@ -1,4 +1,31 @@
 const portfolioSection = document.querySelector('.portfolio');
+const portfolioContent = [
+    {   
+        id: 1,
+        name: "Personal Portfolio Page",
+        description: ["Any developer needs their own site to show off what they can do. See how I made this one.", "I started developing this site about halfway through my Web-Dev coding bootcamp after I had a solid, foundational understanding of HTML and CSS, and right as I began diving into JS.",
+            "This site is still a work in progress, but I am quickly integrating more features and content every week."],
+        skills: ["JS-icon.png", "CSS3-icon.svg", "HTML5-icon.svg"],
+        imgUrls: ["../images/portfolio-cards/card-personal-page.png"]
+    },
+    {   
+        id: 2,
+        name: "Personal Portfolio Page",
+        description: ["I started developing this site about halfway through my Web-Dev coding bootcamp after I had a solid, foundational understanding of HTML and CSS, and right as I began diving into JS.",
+            "This site is still a work in progress, but I am quickly integrating more features and content every week."],
+        skills: ["JS-icon.png", "CSS3-icon.svg", "HTML5-icon.svg"],
+        imgUrls: [""]
+    },
+    {   
+        id: 3,
+        name: "Personal Portfolio Page",
+        description: ["I started developing this site about halfway through my Web-Dev coding bootcamp after I had a solid, foundational understanding of HTML and CSS, and right as I began diving into JS.",
+            "This site is still a work in progress, but I am quickly integrating more features and content every week."],
+        skills: ["JS-icon.png", "CSS3-icon.svg", "HTML5-icon.svg"],
+        imgUrls: [""]
+    },
+];
+
 const popup = document.querySelector('.popup');
 const popupUnderlay = popup.querySelector('.popup__underlay');
 const closeBtn = popup.querySelector('.popup__close-btn');
@@ -11,6 +38,26 @@ const cardItem1 = portfolioSection.querySelector('.card1');
 const cardItem2 = portfolioSection.querySelector('.card2');
 const cardItem3 = portfolioSection.querySelector('.card3');
 const cardItem4 = portfolioSection.querySelector('.card4');
+
+const cardTemplate = document.querySelector("#cardTemplate");
+const portfolioGrid = document.querySelector(".portfolio__grid");
+
+function generateCard(card) {
+    const newCard = cardTemplate.content.cloneNode(true);
+    
+    console.log(newCard);
+    newCard.querySelector(".card__title").textContent = card.name;
+    newCard.querySelector(".card__image").setAttribute("src", card.imgUrls[0]);
+    newCard.querySelector(".card__description").textContent = card.description[0];
+
+    // skills next
+
+
+
+    portfolioGrid.append(newCard);
+}
+
+portfolioContent.forEach(generateCard)
 
 
 function generatePopup(item) {

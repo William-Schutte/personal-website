@@ -16,7 +16,7 @@
 
 .header__subtitle {
     margin-top: 40px;
-    font-size: 50px;
+    font-size: 40px;
     line-height: 80px;
     font-weight: 700;
     margin-bottom: 100px;
@@ -29,8 +29,14 @@
     background-size: contain;
     margin: 0px auto;
     transition: background-image .3s ease-in-out;
+    animation: arrow 1s ease-in-out infinite alternate-reverse;
 }
 
 .header__pointer:hover {
     background-image: url(../images/down-crimson.png);
+}
+
+@keyframes arrow {
+    from {transform: translateY(0);}
+    to {transform: translateY(12px);}
 }

@@ -1,0 +1,13 @@
+$primary-color: #ff652f;
+$font-weights: (
+    "reg": 400,
+    "med": 500,
+    "bold": 700,
+    "blk": 900
+);
+
+
+h1 {
+    text-decoration: underline;
+    font-weight: map-get($font-weights, blk);
+}

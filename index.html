@@ -6,7 +6,7 @@
     <title>William Schutte</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='./pages/index.css'>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 
 
@@ -27,32 +27,31 @@
     <!-- Header Block - Name and Title -->
     <header class="header">
         <h1 class="header__title">William Schutte</h1>
-        <h2 class="header__subtitle">Developer, B.S. Engineering</h2>
+        <h2 class="header__subtitle">Front End Developer, B.S. Engineering</h2>
         <a class="header__pointer header__hover" href="#about"></a>
     </header>
 
     <!-- About Block - Contains summary, skill, resume, and contact link -->
+    <!-- Color Pallette https://colorhunt.co/palette/212893 -->
     <section class="about">
         <div class="page__anchor" id="about"></div>
         <h2 class="about__title">About Me</h2>
         <div class="about__content">
             <div class="about__intro" style="background-image: url(../images/icons/profile-icon.svg);">
                 <h3 class="about__lead">My Story</h3>
-                <p class="about__text">I'm William, an adaptable front-end software engineer with a passion for mathematics and science.</p>
-                <p class="about__text">As a developer with an engineering background, topics encountered in my coding studies like linear algebra, 
-                    algorithms, data structures, and statistics were no new mystery. I pick up new languages and techniques quickly and challenge 
-                    myself to continuously learn and grow, even after the degree was hung on the wall.
+                <p class="about__text">I'm an adaptable front-end software engineer with a passion for mathematics and science.</p>
+                <p class="about__text">I have completed a full-stack web-dev program where I became proficient with MERN stack tech including: 
+                    <span class="text-bold">React, Node, Express, MongoDB, Microsoft Azure,</span> and <span class="text-bold">JS/HTML/CSS</span>.
+                </p>
+                <p class="about__text">As a developer with an engineering background, I'm no stranger to linear algebra, 
+                    algorithms, data structures, and statistics. I pick up new languages and techniques quickly and challenge 
+                    myself to continuously learn and grow, even after my first degree was hung on the wall.
                     </p>
             </div>
-            <div class="about__resume" style="background-image: url(../images/icons/resume-dl-icon.svg);">
-                <h3 class="about__lead about__lead-right">My Resume</h3>
-                <!-- <p class="about__text">See what I've done!</p> -->
-                <a class="about__resume-icon" style="background-image: url(../images/icons/resume-icon.png);" href="./pages/WS Resume.pdf" target="_blank"></a>
-            </div>
+            
             <div class="about__skills" style="background-image: url(../images/icons/dev-icon.svg);">
                 <h3 class="about__lead">My Skills</h3>
-                <p class="about__text">I now specialize in front-end development with expertise in JavaScript, React, Node.js, Flutter, HTML, and CSS.</p>
-                <p class="about__text">Languages and Frameworks:</p>
+                <p class="about__text">Languages, Frameworks, and Skills:</p>
                 <ul class="about__skill-icons">
                     <li class="about__skill-icon" style="background-image: url(../images/icons/JS-icon.png);"></li>
                     <li class="about__skill-icon" style="background-image: url(../images/icons/nodejs-icon.png);"></li>
@@ -61,46 +60,38 @@
                     <li class="about__skill-icon" style="background-image: url(../images/icons/dart-icon.svg);"></li>
                     <li class="about__skill-icon" style="background-image: url(../images/icons/HTML5-icon.svg);"></li>
                     <li class="about__skill-icon" style="background-image: url(../images/icons/CSS3-icon.svg);"></li>
+                    <li class="about__skill-icon" style="background-image: url(../images/icons/figma-icon.png);"></li>
+                    <li class="about__skill-icon" style="background-image: url(../images/icons/firebase-icon.png);"></li>
+                    <li class="about__skill-icon" style="background-image: url(../images/icons/github-icon.png);"></li>
+                    <li class="about__skill-icon" style="background-image: url(../images/icons/git-icon.png);"></li>
+                    <li class="about__skill-icon" style="background-image: url(../images/icons/wordpress-icon.png);"></li>
                     <li class="about__skill-icon" style="background-image: url(../images/icons/matlab-logo.png); border-radius: 50px"></li>
                 </ul>
                 <p class="about__text">See some of my projects below!</p>
             </div>
-            <div class="about__contact" style="background-image: url(../images/icons/email-icon-1.png);">
-                <h3 class="about__lead about__lead-right">Contact Me</h3>
-                <p class="about__text">I'm currently freelancing in the web-design space and looking for full time positions.
-                    Drop me a line!</p>
-                <a class="about__contact-link" href="#contact"></a>
-            </div>
+        
         </div>
     </section>
 
     <!-- Portfolio Block - Contains clickable portfolio cards that popup with more detail  -->
     <section class="portfolio">
-        <div class="portfolio__construction">
+        <!-- <div class="portfolio__construction">
             <h2 class="portfolio__construction-title">Section currently under construction. </br>Check back soon!</h2>
-        </div>
-
+        </div> -->
+<!-- 
         <div class="page__anchor" id="portfolio"></div>
         <h2 class="portfolio__title">Portfolio</h2>
         <ul class="portfolio__grid">
             <li class="card card1 hover-animate">
                 <h3 class="card__title">Personal Portfolio Page</h3>
                 <div class="card__image" style="background-image: url(../images/portfolio-cards/card-personal-page.png);"></div>
-                <p class="card__description">This very page was one of my first web-dev projects.</p>
+                <p class="card__description">Any developer needs their own site to show off what they can do. See how I made this one.</p>
                 <ul class="card__icons">
                     <li class="card__icon" style="background-image: url(../images/icons/dev-icon.svg);"></li>
                     <li class="card__icon" style="background-image: url(../images/icons/HTML5-icon.svg);"></li>
                     <li class="card__icon" style="background-image: url(../images/icons/CSS3-icon.svg);"></li>
                     <li class="card__icon" style="background-image: url(../images/icons/JS-icon.png);"></li>
                 </ul>
-                <details class="card__details">
-                    <p class="image-urls">a</p>
-                    <p class="card__text1">I started developing this site about halfway through my Web-Dev code camp 
-                        when I had a solid foundational understanding of HTML and CSS, and when I was beginning to 
-                        experiment with JS.</p>
-                    <p class="card__text2">This site is still a work in progress, but I am quickly integrating more 
-                        features and content.</p>
-                </details>
             </li>
             <li class="card card2 hover-animate">
                 <h3 class="card__title">Portland to Portland</h3>
@@ -138,7 +129,7 @@
                     <p class="card__text2">c</p>
                 </details>
             </li>
-        </ul>
+        </ul> -->
     </section>
 
     <!-- Contact Block - Means of contacting me (email, phone, github) -->
@@ -167,6 +158,17 @@
         <p class="footer__copyright">&copy;2020 William Schutte</p>
     </section>
 
+    <template id="cardTemplate">
+        <li class="card hover-animate">
+            <h3 class="card__title"></h3>
+            <img class="card__image"></img> 
+            <p class="card__description"></p>
+            <ul class="card__icons">
+                <li class="card__icon"></li>
+            </ul>
+        </li>
+    </template>
+    
     <!-- Portfolio Popup Window - Includes more images, link to view, link to code, description, languages/frames -->
     <section class="popup">
         <div class="popup__underlay"></div>
@@ -177,13 +179,14 @@
             </div>
             <div class="popup__row">
                 <ul class="popup__icons"></ul>
+                <div class="popup__col">
+                    <p class="popup__text text1"></p>
+                    <p class="popup__text text2"></p>
+                    <a class="popup__link link1" target="_blank">See this project in action --></a>
+                    <a class="popup__link link2" target="_blank">See this project's code --></a>
+                </div>
                 <div class="popup__image-slider"></div>
             </div>
-            
-            <p class="popup__text text1"></p>
-            <p class="popup__text text2"></p>
-            <a class="popup__link link1">See this project in action</a>
-            <a class="popup__link link2">See this project's code</a>
         </div>
     </section>
 

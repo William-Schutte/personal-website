@@ -4,6 +4,7 @@
     position: -webkit-sticky;
     top: 0;
     box-shadow: 0 0 12px rgb(55, 55, 55);
+    z-index: 1;
 }
 
 .navbar__content {

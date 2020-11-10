@@ -2,64 +2,56 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(190, 12, 48, 0.8);
-    /* background-color: rgba(220, 20, 60, .8); */
+    background-color: #F05454;
 }
 
 .about__title {
     text-align: center;
     margin: 80px 50px;
-    font-size: 44px;
+    font-size: 52px;
     line-height: 44px;
     font-weight: bold;
 }
 
 .about__content {
-    display: grid;
+    display: flex;
     margin: 0 30px 50px;
-    grid-template-areas: 
-        "intro  resume"
-        "skills contact";
-    grid-template-columns: 3fr 2fr;
-    gap: 50px;
-    max-width: 1000px;  
+    max-width: 1200px;  
 }
 
 .about__intro {
-    grid-area: "intro";
-    padding: 14px;
+    padding: 36px;
     background-size: 50px;
     background-repeat: no-repeat;
-    background-position: 14px 20px;
+    background-position: 36px 36px;
     background-color: rgba(0,0,0,.3);
-    border-radius: 8px;
+    border-radius: 10px;
+    width: 40%;
 }
 
 .about__lead {
     font-size: 24px;
     font-weight: bold;
-    margin: 34px 0 20px 64px;
-}
-
-.about__lead-right {
-    margin: 34px 64px 20px 0;
+    margin: 14px 0 36px 72px;
 }
 
 .about__text {
-    margin-bottom: 12px;
+    margin-top: 24px;
+    margin-bottom: 18px;
     text-align: justify;
+    font-size: 22px;
+    line-height: 36px;
 }
 
 .about__text:nth-of-type(2) {
     margin-bottom: 0;
 }
 
-.about__resume {
-    grid-area: "resume";
+/* .about__resume {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    padding: 14px;
+    padding: 36px;
     background-size: 50px;
     background-repeat: no-repeat;
     background-position: calc(100% - 14px) 20px;
@@ -68,10 +60,11 @@
 }
 
 .about__resume-icon {
-    width: 138px;
-    height: 177px;
+    width: 276px;
+    height: 354px;
     background-repeat: no-repeat;
     background-size: contain;
+    margin: auto;
     align-self: center;
     box-shadow: 5px 5px 10px black;
     transition: opacity .2s linear;
@@ -79,44 +72,44 @@
 
 .about__resume-icon:hover {
     opacity: .8;
-}
+} */
 
 .about__skills {
-    grid-area: "skills";
-    padding: 14px;
+    padding: 36px;
     background-size: 50px;
     background-repeat: no-repeat;
-    background-position: 14px 20px;
+    background-position: 36px 36px;
     background-color: rgba(0,0,0,.3);
-    border-radius: 8px;
+    border-radius: 10px;
+    margin-left: 3%;
+    width: 50%;
 }
 
 .about__skill-icons {
     display: flex;
-    align-items: center;
-    margin: 20px 20px 30px;
-    padding-left: 20px;
-    background-color: rgba(0,0,0,.5);
+    justify-content: left;
+    margin: 20px auto 30px;
+    padding: 36px 24px 12px;
+    background-color: rgba(255,255,255,.3);
     border-radius: 8px;
-    height: 90px;
-    width: min-content
+    flex-wrap: wrap;
 }
 
 .about__skill-icon {
-    width: 50px;
-    height: 50px;
-    margin-right: 20px;
+    display: flex;
+    width: 70px;
+    height: 70px;
+    margin: 0 12px 24px;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
 }
 
-.about__contact {
-    grid-area: "contact";
+/* .about__contact {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    padding: 14px;
+    padding: 36px;
     background-size: 50px;
     background-repeat: no-repeat;
     background-position: calc(100% - 14px) 20px;
@@ -135,7 +128,7 @@
 
 .about__contact-link:hover {
     background-image: url(../images/down-gray.png);
-}
+} */
 
 .about__button {
 }
