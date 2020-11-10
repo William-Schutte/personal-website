@@ -1,0 +1,7 @@
+.header__bg-gradient {
+    height: 100%;
+    padding: 35vh 10vw 0;
+    box-sizing: border-box;
+    background: linear-gradient(90deg, #214252 62.99%, rgba(33, 66, 82, 0) 124.06%);
+    display: flex;
+}

@@ -1,0 +1,5 @@
+.header__row {
+    display: flex;
+    height: min-content;
+    width: 100%
+}

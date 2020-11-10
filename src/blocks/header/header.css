@@ -1,0 +1,14 @@
+@import url('./header__bg-gradient.css');
+@import url('./header__btn.css');
+@import url('./header__name.css');
+@import url('./header__row.css');
+@import url('./header__sub.css');
+@import url('./header__text.css');
+
+.header {
+    height: 100vh;
+    background-image: url('../../images/bg-eqns.jpg');
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+}

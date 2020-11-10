@@ -1,0 +1,20 @@
+.header__btn {
+    width: 80px;
+    height: 80px;
+    border: none;
+    margin: auto 5vw auto auto;
+    background: url('../../images/header-btn.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform-origin: center;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+}
+
+.header__btn:focus {
+    outline: none;
+}
+
+.header__btn:hover {
+    transform: scale(1.2) rotate(90deg);
+}
