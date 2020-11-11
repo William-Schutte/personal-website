@@ -1,0 +1,24 @@
+.about__tech-icon {
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 24px;
+    align-content: center;
+    transition: .2s ease-in-out;
+    text-align: center;
+}
+
+/* .about__tech-icon:hover {
+    width: 150px;
+} */
+
+
+.about__tech-icon:hover .about__tech-icon-name {
+    opacity: 1;
+    font-size: 24px;
+}
+
+.about__tech-icon:hover .about__tech-icon-name {
+    opacity: 1;
+    font-size: 24px;
+}

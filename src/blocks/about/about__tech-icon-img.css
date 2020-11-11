@@ -1,0 +1,6 @@
+.about__tech-icon-img {
+    width: 100%;
+    object-fit: contain;
+    margin: auto 0;
+    transition: .2s ease;
+}

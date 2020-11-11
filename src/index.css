@@ -1,6 +1,10 @@
 @import url('./vendor/reset.css');
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600;700&display=swap');
 @import url('./blocks/header/header.css');
+@import url('./blocks/about/about.css');
+
+@import url('./blocks/misc/svg-shadow.css');
+@import url('./blocks/misc/bold.css');
 
 .page {
   margin: 0;
