@@ -4,3 +4,11 @@
     margin: auto 0;
     transition: .2s ease;
 }
+
+.about__tech-icon-img-alt {
+    width: 80%;
+    display: flex;
+    margin: 4px auto 8px;
+    object-fit: contain;
+    transition: .2s ease;
+}

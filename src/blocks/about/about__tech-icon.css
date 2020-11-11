@@ -2,23 +2,25 @@
     width: 80px;
     display: flex;
     flex-direction: column;
-    margin: 0 24px;
+    margin: 0 20px;
+    /* padding: 0 24px; */
     align-content: center;
-    transition: .2s ease-in-out;
-    text-align: center;
+    transition: 1.2s .2s ease;
 }
 
-/* .about__tech-icon:hover {
-    width: 150px;
-} */
+.about__tech-icon:hover {
+    transform: scale(2);
+    transition: .2s 0s ease;
+    filter: none;
+    z-index: 1;
+}
 
 
 .about__tech-icon:hover .about__tech-icon-name {
     opacity: 1;
-    font-size: 24px;
+    transition: .2s 0s ease;
 }
 
-.about__tech-icon:hover .about__tech-icon-name {
-    opacity: 1;
-    font-size: 24px;
+.about__tech-icon:hover .about__tech-icon-img {
+    /* width: 90%; */
 }

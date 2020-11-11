@@ -1,7 +1,6 @@
 .about__tech-icon-name {
-    margin-top: 16px;
-    opacity: 0;
-    transition: .2s ease;
-    overflow: visible;
+    margin: 8px auto 0;
+    opacity: .4;
+    transition: .2s 0s ease;
 }
 

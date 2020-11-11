@@ -63,16 +63,16 @@ function App() {
               <p className="about__tech-icon-name">GitHub</p>
             </li>
             <li className="about__tech-icon">
-              <img className="about__tech-icon-img" src={iconJs}/>
+              <img className="about__tech-icon-img-alt" src={iconJs}/>
               <p className="about__tech-icon-name">JavaScript</p>
             </li>
             <li className="about__tech-icon">
               <img className="about__tech-icon-img" src={iconCss}/>
-              <p className="about__tech-icon-name">CSS 3</p>
+              <p className="about__tech-icon-name">CSS</p>
             </li>
             <li className="about__tech-icon">
               <img className="about__tech-icon-img" src={iconHtml}/>
-              <p className="about__tech-icon-name">HTML 5</p>
+              <p className="about__tech-icon-name">HTML</p>
             </li>
           </ul>
         </div>
