@@ -1,0 +1,10 @@
+@import url('./projects__bg-gradient.css');
+@import url('./projects__block.css');
+@import url('./projects__container.css');
+@import url('./projects__item.css');
+@import url('./projects__title.css');
+
+.projects {
+    width: 100vw;
+    background: linear-gradient(180deg, #F05454 0%, rgba(206, 98, 98, 0.85) 11.55%);
+}

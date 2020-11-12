@@ -1,4 +1,7 @@
 .about__tech {
     color: #fff;
+    font-weight: 600;
     text-align: right;
+    margin: 0 auto;
+    width: 80%;
 }

@@ -1,0 +1,10 @@
+@import url('./contact__container.css');
+@import url('./contact__icon.css');
+@import url('./contact__item.css');
+@import url('./contact__text.css');
+@import url('./contact__title.css');
+
+.contact {
+    background-color: rgba(33, 66, 82, 0.94);
+    color: #fff;
+}

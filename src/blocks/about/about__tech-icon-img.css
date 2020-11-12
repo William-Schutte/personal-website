@@ -1,5 +1,6 @@
 .about__tech-icon-img {
     width: 100%;
+    max-width: 80px;
     object-fit: contain;
     margin: auto 0;
     transition: .2s ease;
@@ -7,8 +8,9 @@
 
 .about__tech-icon-img-alt {
     width: 80%;
+    max-width: 100px;
     display: flex;
-    margin: 4px auto 8px;
+    margin: 14px auto auto;
     object-fit: contain;
     transition: .2s ease;
 }

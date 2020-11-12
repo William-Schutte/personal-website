@@ -1,9 +1,9 @@
 .about__tech-icon {
-    width: 80px;
+    min-width: 50px;
+    max-width: 100px;
     display: flex;
     flex-direction: column;
-    margin: 0 20px;
-    /* padding: 0 24px; */
+    margin: 0 14px;
     align-content: center;
     transition: 1.2s .2s ease;
 }
@@ -19,8 +19,4 @@
 .about__tech-icon:hover .about__tech-icon-name {
     opacity: 1;
     transition: .2s 0s ease;
-}
-
-.about__tech-icon:hover .about__tech-icon-img {
-    /* width: 90%; */
 }

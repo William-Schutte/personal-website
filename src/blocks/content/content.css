@@ -1,0 +1,8 @@
+.content {
+    width: 100vw;
+    background-image: url('../../images/bg-eqns.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    box-sizing: border-box;
+}

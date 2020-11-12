@@ -1,0 +1,7 @@
+.contact__icon {
+    width: 100px;
+    height: 120px;
+    margin: 0 auto auto;
+    object-fit: contain;
+    padding: 10px 0 0;
+}
