@@ -1,0 +1,9 @@
+.project__title {
+    text-align: center;
+    font-weight: 600;
+    font-size: 28px;
+    margin: 0 0 14px;
+    padding: 24px 0 14px;
+    color: #fff;
+    background-color: rgba(33, 66, 82, 1);
+}

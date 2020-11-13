@@ -1,0 +1,13 @@
+@import url('./project__btn.css');
+@import url('./project__icon.css');
+@import url('./project__overlay.css');
+@import url('./project__tech-container.css');
+@import url('./project__title.css');
+
+.project {
+    height: 300px;
+    width: 100%;
+    background-size: cover;
+    border-radius: 10px;
+    overflow: hidden;
+}

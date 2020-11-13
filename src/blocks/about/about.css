@@ -8,7 +8,6 @@
 @import url('./about__tech-icon-name.css');
 
 .about {
-    height: 100vh;
     width: 100vw;
     background-image: url('../../images/bg-triangles.png');
     background-position: bottom;

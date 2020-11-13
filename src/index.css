@@ -5,6 +5,7 @@
 @import url('./blocks/content/content.css');
 @import url('./blocks/parallax/parallax.css');
 @import url('./blocks/projects/projects.css');
+@import url('./blocks/project/project.css');
 @import url('./blocks/contact/contact.css');
 @import url('./blocks/footer/footer.css');
 @import url('./blocks/misc/svg-shadow.css');

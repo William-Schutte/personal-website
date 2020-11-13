@@ -1,0 +1,23 @@
+.project__btn {
+    border: none;
+    background: none;
+    font-family: 'Work Sans';
+    font-size: 22px;
+    font-weight: 300;
+    text-align: center;
+    padding: 12px 0;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s ease;
+    text-decoration: none;
+}
+
+.project__btn:focus {
+    outline: none;
+}
+
+.project__btn:hover {
+    background-color: rgba(33, 66, 82, 1);
+    font-weight: 600;
+    box-shadow: 0 3px 4px 3px rgba(0,0,0,.6);
+}

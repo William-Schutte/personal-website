@@ -1,4 +1,7 @@
+@import url('./footer__text.css');
+
 .footer {
-    height: 180px;
     background-color: #142731;
+    margin: 0 auto;
+    padding: 32px 14px;
 }

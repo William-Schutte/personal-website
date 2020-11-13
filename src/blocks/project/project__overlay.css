@@ -1,0 +1,16 @@
+.project__overlay {
+    height: 100%;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: rgba(33, 66, 82, .85);
+    backdrop-filter: blur(2px);
+    overflow: hidden;
+    transition: .8s ease;
+}
+
+.project__overlay:hover {
+    opacity: 1;
+    transition: .3s ease;
+}

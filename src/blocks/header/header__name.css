@@ -2,3 +2,10 @@
     font-size: 96px;
     color: #fff;
 }
+
+@media screen and (max-width: 1280px) {
+    .header__name {
+        font-size: 64px;
+        color: #fff;
+    }
+}
