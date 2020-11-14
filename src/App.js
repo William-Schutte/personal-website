@@ -1,3 +1,4 @@
+import Header from './components/Header';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Tech from './components/Tech';
@@ -5,18 +6,7 @@ import Tech from './components/Tech';
 function App() {
   return (
     <div className="App">
-      <header className="header">
-        <div className="header__bg-gradient">
-          <div className="header__row">
-            <div className="header__text">
-              <h1 className="header__name">William Schutte</h1>
-              <h2 className="header__sub">Full Stack Web Developer</h2>
-            </div>
-            <button className="header__btn svg-shadow" />
-          </div>
-        </div>
-      </header>
-
+      <Header />
       <section className="about">
         <div className="about__me">
           <h3 className="about__title">Who am I?</h3>
