@@ -1,0 +1,7 @@
+.modal__links {
+    margin: auto 0 14px;
+    padding: 0 14px;
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+}

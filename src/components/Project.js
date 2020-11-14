@@ -3,6 +3,11 @@ import React from 'react';
 export default function Project(props) {
     const bgProp = { backgroundImage: `url(${props.data.coverImg})` };
 
+
+    function handleDetailsClick() {
+        props.openDetail(props.data);
+    }
+
     return (
         <li className="project" style={bgProp} >
             <div className="project__overlay">
@@ -12,9 +17,9 @@ export default function Project(props) {
                         <img className="project__icon" key={i} src={icon} alt="Technology icon" />
                     ))}
                 </div>
-                <button className="project__btn">Details</button>
-                <a className="project__btn" href={props.data.links.ghLink} target="_blank">View Code</a>
-                <a className="project__btn" href={props.data.links.demoLink} target="_blank">View Project</a>
+                <button className="project__btn" onClick={handleDetailsClick}>Details</button>
+                <a className="project__btn" href={props.data.links.ghLink} target="_blank" rel="noreferrer">View Code</a>
+                <a className="project__btn" href={props.data.links.demoLink} target="_blank" rel="noreferrer">View Project</a>
             </div>
         </li>
     )

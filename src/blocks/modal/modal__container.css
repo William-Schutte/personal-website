@@ -1,0 +1,11 @@
+.modal__container {
+    min-width: 40%;
+    max-width: 800px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    border-radius: 10px;
+    margin: 10% auto;
+    overflow: hidden;
+}
