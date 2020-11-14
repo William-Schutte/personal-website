@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default function Project(props) {
-    const bgProp = { backgroundImage: `url(${props.data.coverImg})` };
+    const bgProp = { backgroundImage: `url(${props.data.imgs[0]})` };
 
 
     function handleDetailsClick() {

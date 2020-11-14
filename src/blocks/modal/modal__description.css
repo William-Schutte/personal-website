@@ -1,4 +1,9 @@
 .modal__description {
     font-size: 20px;
-    padding: 0 14px;
+    padding: 0 24px 18px;
+    color: #214252
+}
+
+.modal__description:last-of-type {
+    padding-bottom: 24px;
 }

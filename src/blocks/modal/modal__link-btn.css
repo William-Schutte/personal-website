@@ -12,6 +12,7 @@
     margin-right: 14px;
     transition: .3s ease;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .modal__link-btn:nth-of-type(2) {
