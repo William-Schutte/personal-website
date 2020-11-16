@@ -7,37 +7,54 @@ import Contact from './Contact';
 import ProjectDetailModal from './ProjectDetailModal';
 
 
-function App() {
-  const [isModalOpen, setModalOpen] = React.useState(false);
-  const [project, setProject] = React.useState({});
+class App extends React.Component {
+  constructor() {
+    super();
+    this.aboutSection = React.createRef();
+    this.state = {
+      isModalOpen: false,
+      project: {},
+    };
 
-  function closeModal() {
-    setModalOpen(false);
+    this.handleHeaderBtnClick = this.handleHeaderBtnClick.bind(this);
+    this.closeModal = this.closeModal.bind(this);
+    this.handleProjectDetailClick = this.handleProjectDetailClick.bind(this);
   }
 
-  function handleProjectDetailClick(selectedProject) {
-    setProject(selectedProject);
-    setModalOpen(true);
+  handleHeaderBtnClick() {
+    this.aboutSection.current.scrollIntoView({ behavior: "smooth" });
   }
 
+  closeModal() {
+    this.setState({ isModalOpen: false });
+  }
 
-  return (
-    <div className="App">
-      <Header />
-      <section className="about">
-        <AboutMe />
-        <Tech />
-      </section>
-      <section className="content">
-        <Projects openDetail={handleProjectDetailClick}/>
-        <Contact />
-      </section>
-      <footer className="footer">
-        <p className="footer__text">William Schutte, &#169;2020</p>
-      </footer>
-      <ProjectDetailModal project={project} isOpen={isModalOpen} closeModal={closeModal}/>
-    </div>
-  );
+  handleProjectDetailClick(selectedProject) {
+    this.setState({
+      isModalOpen: true,
+      project: selectedProject,
+    });
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <Header handleClick={this.handleHeaderBtnClick}/>
+        <section className="about" ref={this.aboutSection}>
+          <AboutMe />
+          <Tech />
+        </section>
+        <section className="content">
+          <Projects openDetail={this.handleProjectDetailClick} />
+          <Contact />
+        </section>
+        <footer className="footer">
+          <p className="footer__text">William Schutte, &#169;2020</p>
+        </footer>
+        <ProjectDetailModal project={this.state.project} isOpen={this.state.isModalOpen} closeModal={this.closeModal} />
+      </div>
+    );
+  }
 }
 
 export default App;

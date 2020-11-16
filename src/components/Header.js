@@ -1,7 +1,7 @@
 import gsap from 'gsap';
 import { useEffect } from 'react';
 
-function Header() {
+function Header(props) {
     
 
     useEffect(() => {
@@ -11,9 +11,10 @@ function Header() {
     }, []);
 
     function handleClick() {
-        let t1 = gsap.timeline();
-        t1.to('.header__btn', {duration: 1, rotate: 1200,});
-        t1.to('.header__btn', {duration: 2, y: -1000, ease: "power2.out"});
+        // let t1 = gsap.timeline();
+        // t1.to('.header__btn', {duration: 1, rotate: 1200,});
+        // t1.to('.header__btn', {duration: 2, y: -1000, ease: "power2.out"});
+        props.handleClick();
     }
 
     return (
@@ -24,7 +25,7 @@ function Header() {
                         <h1 className="header__name">William Schutte</h1>
                         <h2 className="header__sub">Full Stack Web Developer</h2>
                     </div>
-                    <button className="header__btn svg-shadow" />
+                    <button className="header__btn svg-shadow" onClick={handleClick} />
                 </div>
             </div>
         </header>
