@@ -1,10 +1,15 @@
-import p1img from '../images/portfolio/1-around.png';
-import p1img2 from '../images/portfolio/1-around2.png';
-import p1img3 from '../images/portfolio/1-around3.png';
-import p2img from '../images/portfolio/2-website.png';
-import p3img from '../images/portfolio/3-ind.png';
-import p4img from '../images/portfolio/4-p2p.png';
-import p4img2 from '../images/portfolio/4-p2p2.png';
+import around1 from '../images/portfolio/around1.png';
+import around2 from '../images/portfolio/around2.png';
+import around3 from '../images/portfolio/around3.png';
+import travelMenu1 from '../images/portfolio/travel-menu1.png';
+import travelMenu2 from '../images/portfolio/travel-menu2.png';
+import travelMenu3 from '../images/portfolio/travel-menu3.png';
+import portfolio1 from '../images/portfolio/portfolio1.png';
+import portfolio2 from '../images/portfolio/portfolio2.png';
+import indubitably1 from '../images/portfolio/indubitably1.png';
+import portland1 from '../images/portfolio/portland1.png';
+import portland2 from '../images/portfolio/portland2.png';
+
 import css from '../images/icons/i-css.svg';
 import express from '../images/icons/i-express.svg';
 import github from '../images/icons/i-github.svg';
@@ -14,7 +19,8 @@ import mongo from '../images/icons/i-mongo.svg';
 import node from '../images/icons/i-node.svg';
 import npm from '../images/icons/i-npm.svg';
 import react from '../images/icons/i-react.svg';
-import netlify from '../images/icons/i-netlify.svg'
+import netlify from '../images/icons/i-netlify.svg';
+import figma from '../images/icons/i-figma.svg';
 
 
 class Project {
@@ -36,20 +42,30 @@ const p1 = new Project({
         "The front end is was designed as a React single-page-app from a given design spec on Figma, with React Router providing navigation to multiple screens. The backend is an Express RESTful API running on Microsoft Azure servers.",
         "MongoDB stores user and card data, allowing for user authorization and protected actions, like deleting cards and editing profile information."],
     tech: [react, express, mongo, js, node, npm],
-    imgs: [p1img, p1img2, p1img3],
+    imgs: [around1, around2, around3],
 });
 
 const p2 = new Project({ 
+    name: "Where to Next?", 
+    ghLink: "https://github.com/William-Schutte/travel-menu",
+    demoLink: "https://wizardly-heyrovsky-06023e.netlify.app/",
+    description: ["A simple React page with destinations I plan on visiting. Destinations can be filtered by region and sorted by flight cost, region, or id (default).",
+        ""],
+    tech: [react, netlify, js],
+    imgs: [travelMenu1, travelMenu2, travelMenu3],
+});
+
+const p3 = new Project({ 
     name: "This Portfolio", 
     ghLink: "https://github.com/William-Schutte/personal-website",
     demoLink: "https://wschutte.com/",
     description: ["This page is a relatively simple React app deployed on Netlify. I started prototyping on Figma, created a basic HTML mockup, and started adding interactivity to my React components.",
-        ""],
-    tech: [react, netlify, js, css, html],
-    imgs: [p2img],
+        "You can follow the link to the page below, but you're already here!"],
+    tech: [react, netlify, figma, js, css, html],
+    imgs: [portfolio1, portfolio2],
 });
 
-const p3 = new Project({ 
+const p4 = new Project({ 
     name: "Indubitably", 
     ghLink: "https://github.com/William-Schutte/indubitably",
     demoLink: "",
@@ -57,20 +73,20 @@ const p3 = new Project({
         "Different cities and regions seem to have preferences for various frameworks or languages. I thought it would be interesting to see how these variables play out geographically, and maybe, it would even help me find a cool new job in a cool new city.",
         "Images above are of my Figma prototype. I'm currently teaching myself python to scrape indeed for data and organize it in a meaningful way to send it to my React app. The backend will be hosted on AWS."
     ],
-    tech: [react, express, js],
-    imgs: [p3img],
+    tech: [react, express, figma, js],
+    imgs: [indubitably1],
 });
 
-const p4 = new Project({ 
+const p5 = new Project({ 
     name: "Portland to Portland", 
     ghLink: "https://github.com/William-Schutte/web_project_3",
     demoLink: "https://william-schutte.github.io/web_project_3/",
     description: ["One of my earlier assignments for my web-dev course, this responsive page demonstrates an understanding of HTML, CSS, and BEM methodology, as well as the ability to take a design and make it functional."],
     tech: [html, css, github],
-    imgs: [p4img, p4img2],
+    imgs: [portland1, portland2],
 });
 
-const p5 = new Project({ 
+const p6 = new Project({ 
     name: "Title", 
     ghLink: "",
     demoLink: "",
@@ -79,5 +95,5 @@ const p5 = new Project({
     imgs: [],
 });
 
-const projects = [p1, p2, p3, p4];
+const projects = [p1, p2, p3, p4, p5];
 export default projects;

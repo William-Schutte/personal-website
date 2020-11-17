@@ -7,7 +7,7 @@
     background-color: rgba(33, 66, 82, .85);
     backdrop-filter: blur(2px);
     overflow: hidden;
-    transition: .8s ease;
+    transition: 1s .2s ease;
 }
 
 .project__overlay:hover {

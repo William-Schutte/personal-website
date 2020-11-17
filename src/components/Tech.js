@@ -4,7 +4,7 @@ import iconHtml from '../images/icons/i-html.svg';
 import iconJs from '../images/icons/i-js.svg';
 import iconMongo from '../images/icons/i-mongo.svg';
 import iconNode from '../images/icons/i-node.svg';
-import iconNpm from '../images/icons/i-npm.svg';
+import iconFigma from '../images/icons/i-figma.svg';
 import iconReact from '../images/icons/i-react.svg';
 import iconGithub from '../images/icons/i-github.svg';
 
@@ -30,8 +30,8 @@ function Tech() {
               <p className="about__tech-icon-name">Node.js</p>
             </li>
             <li className="about__tech-icon">
-              <img className="about__tech-icon-img" src={iconGithub} />
-              <p className="about__tech-icon-name">GitHub</p>
+              <img className="about__tech-icon-img" src={iconFigma} />
+              <p className="about__tech-icon-name">Figma</p>
             </li>
             <li className="about__tech-icon">
               <img className="about__tech-icon-img-alt" src={iconJs} />

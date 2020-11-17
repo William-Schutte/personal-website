@@ -1,7 +1,5 @@
 .modal__container {
-    min-width: 40%;
     max-width: 700px;
-    /* height: 600px; */
     display: flex;
     flex-direction: column;
     background-color: white;
