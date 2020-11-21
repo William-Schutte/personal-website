@@ -9,6 +9,9 @@ import portfolio2 from '../images/portfolio/portfolio2.png';
 import indubitably1 from '../images/portfolio/indubitably1.png';
 import portland1 from '../images/portfolio/portland1.png';
 import portland2 from '../images/portfolio/portland2.png';
+import adventur1 from '../images/portfolio/adventur1.png';
+import adventur2 from '../images/portfolio/adventur2.jpg';
+import adventur3 from '../images/portfolio/adventur3.jpg';
 
 import css from '../images/icons/i-css.svg';
 import express from '../images/icons/i-express.svg';
@@ -21,6 +24,8 @@ import npm from '../images/icons/i-npm.svg';
 import react from '../images/icons/i-react.svg';
 import netlify from '../images/icons/i-netlify.svg';
 import figma from '../images/icons/i-figma.svg';
+import gatsby from '../images/icons/i-gatsby.svg';
+import graphQL from '../images/icons/i-graphql.svg';
 
 
 class Project {
@@ -45,7 +50,7 @@ const p1 = new Project({
     imgs: [around1, around2, around3],
 });
 
-const p2 = new Project({ 
+const p4 = new Project({ 
     name: "Where to Next?", 
     ghLink: "https://github.com/William-Schutte/travel-menu",
     demoLink: "https://wizardly-heyrovsky-06023e.netlify.app/",
@@ -55,7 +60,7 @@ const p2 = new Project({
     imgs: [travelMenu1, travelMenu2, travelMenu3],
 });
 
-const p3 = new Project({ 
+const p5 = new Project({ 
     name: "This Portfolio", 
     ghLink: "https://github.com/William-Schutte/personal-website",
     demoLink: "https://wschutte.com/",
@@ -65,7 +70,7 @@ const p3 = new Project({
     imgs: [portfolio1, portfolio2],
 });
 
-const p4 = new Project({ 
+const p3 = new Project({ 
     name: "Indubitably", 
     ghLink: "https://github.com/William-Schutte/indubitably",
     demoLink: "",
@@ -77,7 +82,7 @@ const p4 = new Project({
     imgs: [indubitably1],
 });
 
-const p5 = new Project({ 
+const p6 = new Project({ 
     name: "Portland to Portland", 
     ghLink: "https://github.com/William-Schutte/web_project_3",
     demoLink: "https://william-schutte.github.io/web_project_3/",
@@ -86,14 +91,16 @@ const p5 = new Project({
     imgs: [portland1, portland2],
 });
 
-const p6 = new Project({ 
-    name: "Title", 
-    ghLink: "",
-    demoLink: "",
-    description: [""],
-    coverImg: "",
-    imgs: [],
+const p2 = new Project({ 
+    name: "ADVENT(ur)", 
+    ghLink: "https://github.com/William-Schutte/gatsby-react-demo",
+    demoLink: "https://wonderful-boyd-e49e91.netlify.app/",
+    description: ["I love traveling. Learning new things is also up there. I created this responsive site for a hypothetical travel company while learning a new framework or two.",
+        "Gatsby.js, an open-sourced React framework, provided the backbone for this site. I used Styled Components to dynamically incorporate CSS and make my React code more maintainable.",
+        "Finally, I used a bit of GraphQL to manage assets and images."],
+    tech: [gatsby, react, graphQL, netlify],
+    imgs: [adventur1, adventur2, adventur3],
 });
 
-const projects = [p1, p2, p3, p4, p5];
+const projects = [p1, p2, p3, p4, p5, p6];
 export default projects;
