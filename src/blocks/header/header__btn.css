@@ -2,10 +2,11 @@
     width: 80px;
     height: 80px;
     border: none;
-    margin: auto 5vw auto auto;
+    margin: auto;
+    padding: 0 2rem 0 0;
     background: url('../../images/header-btn.svg');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     transform-origin: center;
     transition: .2s ease-in-out;
     cursor: pointer;
@@ -17,4 +18,11 @@
 
 .header__btn:hover {
     transform: scale(1.2) rotate(90deg);
+}
+
+@media screen and (max-width: 650px) {
+    .header__btn {
+        width: 50px;
+        height: 50px;
+    }
 }

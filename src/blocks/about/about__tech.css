@@ -3,5 +3,11 @@
     font-weight: 600;
     text-align: right;
     margin: 0 auto;
-    width: 80%;
+    width: 90%;
+}
+
+@media screen and (max-width: 1300px) {
+    .about__tech {
+        width: 100%;
+    }
 }

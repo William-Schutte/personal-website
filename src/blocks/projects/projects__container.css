@@ -3,3 +3,9 @@
     margin: 0 auto;
     padding: 0 60px 140px;
 }
+
+@media screen and (max-width: 768px) {
+    .projects__container {
+        padding: 0 30px 100px;
+    }
+}

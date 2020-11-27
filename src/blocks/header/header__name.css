@@ -3,9 +3,14 @@
     color: #fff;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (min-width: 501px) and (max-width: 1280px) {
     .header__name {
         font-size: 64px;
-        color: #fff;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .header__name {
+        font-size: 48px;
     }
 }

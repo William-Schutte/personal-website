@@ -16,3 +16,9 @@
     padding: 8vw;
     box-sizing: border-box;
 }
+
+@media screen and (max-width: 768px) {
+    .about {
+        padding: 6vw 8vw 0;
+    }
+}

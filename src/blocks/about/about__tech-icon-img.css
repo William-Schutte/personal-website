@@ -8,9 +8,21 @@
 
 .about__tech-icon-img-alt {
     width: 80%;
-    max-width: 100px;
+    max-width: 80px;
     display: flex;
     margin: 14px auto auto;
     object-fit: contain;
     transition: .2s ease;
+}
+
+@media screen and (max-width: 768px) {
+    .about__tech-icon-img {
+        margin: .5rem 0;
+        height: 60px;
+    }
+
+    .about__tech-icon-img-alt {
+        margin: .5rem 0;
+        height: 60px;
+    }
 }
