@@ -1,7 +1,8 @@
 .contact__item {
+    display: flex;
     width: 300px;
     display: flex;
-    margin-top: 24px;
+    margin: 24px 0;
     flex-direction: column;
     align-items: center;
     border-radius: 10px;
@@ -14,4 +15,10 @@
     box-shadow: 0 0 5px 5px rgba(0,0,0,.2);
     background-color: #214252;
     transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px) {
+    .contact__item {
+        width: 200px;
+    }
 }

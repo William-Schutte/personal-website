@@ -1,9 +1,15 @@
 .modal__description {
     font-size: 20px;
-    padding: 0 24px 18px;
+    padding: 0 1.5rem 14px;
     color: #214252
 }
 
 .modal__description:last-of-type {
     padding-bottom: 24px;
 }
+
+@media screen and (max-width: 768px) {
+    .modal__description {
+      font-size: 18px;   
+    }
+  }

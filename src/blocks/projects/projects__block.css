@@ -1,5 +1,11 @@
 .projects__block {
     display: grid;
     gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+@media screen and (max-width: 900px) {
+    .projects__block {
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
 }

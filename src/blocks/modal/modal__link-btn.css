@@ -1,18 +1,23 @@
 .modal__link-btn {
     background-color: #ce6262;
-    width: 180px;
     text-align: center;
     color: #fff;
     font-size: 22px;
     font-weight: 300;
     line-height: 22px;
-    padding: 8px;
+    padding: .5rem 1rem;
     border: none;
     border-radius: 8px;
-    margin-right: 14px;
     transition: .3s ease;
     cursor: pointer;
     text-decoration: none;
+    margin-right: 1rem;
+    font-family: 'Work Sans';
+    font-weight: 500;
+}
+
+.modal__link-btn_secondary {
+    background-color: rgba(33, 66, 82, 1);
 }
 
 .modal__link-btn:nth-of-type(2) {
@@ -21,6 +26,10 @@
 
 .modal__link-btn:hover {
     background-color: rgba(33, 66, 82, 1);
-    font-weight: 600;
+    box-shadow: 3px 3px 4px 2px rgba(0,0,0,.4);
+}
+
+.modal__link-btn_secondary:hover {
+    background-color: #af2d2d;
     box-shadow: 3px 3px 4px 2px rgba(0,0,0,.4);
 }

@@ -26,6 +26,7 @@ import netlify from '../images/icons/i-netlify.svg';
 import figma from '../images/icons/i-figma.svg';
 import gatsby from '../images/icons/i-gatsby.svg';
 import graphQL from '../images/icons/i-graphql.svg';
+import python from '../images/icons/i-python.svg';
 
 
 class Project {
@@ -39,12 +40,12 @@ class Project {
 }
 
 const p1 = new Project({ 
-    name: "React Capstone Project", 
+    name: "React Image-Share Project", 
     ghLink: "https://github.com/William-Schutte/react-around-api-full",
     demoLink: "https://ws.p15.students.nomoreparties.site/",
     description: [
         "This was the final guided project in my full-stack web-dev course, and as such, incorporates almost all of the techniques/frameworks covered in the class. This app features user creation, a login screen, and an Instagram-like image hosting, where users can upload and like pictures.", 
-        "The front end is was designed as a React single-page-app from a given design spec on Figma, with React Router providing navigation to multiple screens. The backend is an Express RESTful API running on Microsoft Azure servers.",
+        "The front end is was designed as a React single-page-app from a given design spec on Figma, with React Router providing navigation to multiple screens. The backend is a custom Express RESTful API running on Microsoft Azure servers.",
         "MongoDB stores user and card data, allowing for user authorization and protected actions, like deleting cards and editing profile information."],
     tech: [react, express, mongo, js, node, npm],
     imgs: [around1, around2, around3],
@@ -78,7 +79,7 @@ const p3 = new Project({
         "Different cities and regions seem to have preferences for various frameworks or languages. I thought it would be interesting to see how these variables play out geographically, and maybe, it would even help me find a cool new job in a cool new city.",
         "Images above are of my Figma prototype. I'm currently teaching myself python to scrape indeed for data and organize it in a meaningful way to send it to my React app. The backend will be hosted on AWS."
     ],
-    tech: [react, express, figma, js],
+    tech: [react, python, express, figma, js],
     imgs: [indubitably1],
 });
 
@@ -95,7 +96,7 @@ const p2 = new Project({
     name: "ADVENT(ur)", 
     ghLink: "https://github.com/William-Schutte/gatsby-react-demo",
     demoLink: "https://wonderful-boyd-e49e91.netlify.app/",
-    description: ["I love traveling. Learning new things is also up there. I created this responsive site for a hypothetical travel company while learning a new framework or two.",
+    description: ["I love traveling. Learning new things is pretty great. So I created this responsive site for a hypothetical travel company while learning a new thing or two.",
         "Gatsby.js, an open-sourced React framework, provided the backbone for this site. I used Styled Components to dynamically incorporate CSS and make my React code more maintainable.",
         "Finally, I used a bit of GraphQL to manage assets and images."],
     tech: [gatsby, react, graphQL, netlify],

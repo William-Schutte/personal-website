@@ -5,3 +5,10 @@
     object-fit: contain;
     padding: 10px 0 0;
 }
+
+@media screen and (max-width: 768px) {
+    .contact__icon {
+        width: 80px;
+        height: 100px;
+    }
+}
