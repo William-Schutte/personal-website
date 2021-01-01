@@ -2,7 +2,7 @@ import iconGithub from '../images/icons/i-github.svg';
 import iconGmail from '../images/icons/i-gmail.png';
 import iconLinkedin from '../images/icons/i-linkedin.png';
 import iconResume from '../images/icons/i-resume.png';
-import resume from '../images/Resume.pdf';
+import resume from '../images/resume.pdf';
 
 
 function Contact() {
