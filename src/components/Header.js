@@ -24,6 +24,7 @@ function Header(props) {
                     <div className="header__text">
                         <h1 className="header__name">William Schutte</h1>
                         <h2 className="header__sub">Full Stack Web Developer</h2>
+                        <h2 className="header__sub">B.S. Engineering</h2>
                     </div>
                     <button className="header__btn svg-shadow" onClick={handleClick} />
                 </div>
