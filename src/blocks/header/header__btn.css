@@ -2,14 +2,20 @@
     width: 80px;
     height: 80px;
     border: none;
-    margin: auto;
-    padding: 0 2rem 0 0;
     background: url('../../images/header-btn.svg');
     background-repeat: no-repeat;
     background-size: contain;
     transform-origin: center;
     transition: .2s ease-in-out;
     cursor: pointer;
+}
+
+.header__btn_div {
+    width: 80px;
+    height: 80px;
+    
+    margin: auto;
+    padding: 0 2rem 0 0;
 }
 
 .header__btn:focus {

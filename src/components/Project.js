@@ -1,15 +1,24 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 export default function Project(props) {
-    const bgProp = { backgroundImage: `url(${props.data.imgs[0]})` };
+    useEffect(() => {
+        Aos.init({})
+    }, []);
 
+    const bgProp = { backgroundImage: `url(${props.data.imgs[0]})` };
+    console.log(props.data)
 
     function handleDetailsClick() {
         props.openDetail(props.data);
     }
 
     return (
-        <li className="project" style={bgProp} >
+        <li className="project" style={bgProp}
+            data-aos="zoom-in"
+            data-aos-delay={`${props.index % 3 * 200}`}
+            data-aos-duration="1000">
             <div className="project__overlay">
                 <h3 className="project__title">{props.data.name}</h3>
                 <div className="project__tech-container">

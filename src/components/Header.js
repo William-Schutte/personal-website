@@ -1,19 +1,13 @@
-import gsap from 'gsap';
-import { useEffect } from 'react';
+import { useEffect } from 'react'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 function Header(props) {
-    
-
     useEffect(() => {
-        gsap.from('.header__name', {duration: 1, delay: .6, x: -1000, ease: "power2.out"});
-        gsap.from('.header__sub', {duration: 1, delay: .4, x: -1000, ease: "power2.out"});
-        // 
+        Aos.init({})
     }, []);
 
     function handleClick() {
-        // let t1 = gsap.timeline();
-        // t1.to('.header__btn', {duration: 1, rotate: 1200,});
-        // t1.to('.header__btn', {duration: 2, y: -1000, ease: "power2.out"});
         props.handleClick();
     }
 
@@ -22,11 +16,26 @@ function Header(props) {
             <div className="header__bg-gradient">
                 <div className="header__row">
                     <div className="header__text">
-                        <h1 className="header__name">William Schutte</h1>
-                        <h2 className="header__sub">Full Stack Web Developer</h2>
-                        <h2 className="header__sub">B.S. Engineering</h2>
+                        <h1 className="header__name"
+                            data-aos="fade-down"
+                            data-aos-delay="200"
+                            data-aos-duration="1400">William Schutte</h1>
+                        <h2 className="header__sub"
+                            data-aos="fade-down"
+                            data-aos-delay="100"
+                            data-aos-duration="1400">Full Stack Web Developer</h2>
+                        <h2 className="header__sub"
+                            data-aos="fade-down"
+                            data-aos-delay="0"
+                            data-aos-duration="1400">B.S. Engineering</h2>
                     </div>
-                    <button className="header__btn svg-shadow" onClick={handleClick} />
+                    <div className="header__btn_div" 
+                        data-aos="fade-right"
+                        data-aos-delay="100"
+                        data-aos-duration="1000">
+                        <button className="header__btn svg-shadow" onClick={handleClick} />
+                    </div>
+
                 </div>
             </div>
         </header>
