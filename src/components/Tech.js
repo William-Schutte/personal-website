@@ -1,12 +1,13 @@
 import { useEffect } from 'react'
-import iconCss from '../images/icons/i-css.svg';
 import iconExpress from '../images/icons/i-express.svg';
-import iconHtml from '../images/icons/i-html.svg';
 import iconJs from '../images/icons/i-js.svg';
 import iconMongo from '../images/icons/i-mongo.svg';
 import iconNode from '../images/icons/i-node.svg';
 import iconFigma from '../images/icons/i-figma.svg';
 import iconReact from '../images/icons/i-react.svg';
+import iconGatsby from '../images/icons/i-gatsby.svg';
+import iconPython from '../images/icons/i-python.svg';
+
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 
@@ -30,32 +31,32 @@ function Tech() {
           <p className="about__tech-icon-name">React</p>
         </li>
         <li className="about__tech-icon">
-          <img className="about__tech-icon-img" src={iconExpress} alt="icon" />
-          <p className="about__tech-icon-name">express.js</p>
-        </li>
-        <li className="about__tech-icon">
-          <img className="about__tech-icon-img" src={iconMongo} alt="icon" />
-          <p className="about__tech-icon-name">MongoDB</p>
-        </li>
-        <li className="about__tech-icon">
-          <img className="about__tech-icon-img" src={iconNode} alt="icon" />
-          <p className="about__tech-icon-name">Node.js</p>
-        </li>
-        <li className="about__tech-icon">
-          <img className="about__tech-icon-img" src={iconFigma} alt="icon" />
-          <p className="about__tech-icon-name">Figma</p>
+          <img className="about__tech-icon-img" src={iconGatsby} alt="icon" />
+          <p className="about__tech-icon-name">Gatsby</p>
         </li>
         <li className="about__tech-icon">
           <img className="about__tech-icon-img-alt" src={iconJs} alt="icon" />
           <p className="about__tech-icon-name">JavaScript</p>
         </li>
         <li className="about__tech-icon">
-          <img className="about__tech-icon-img" src={iconCss} alt="icon" />
-          <p className="about__tech-icon-name">CSS</p>
+          <img className="about__tech-icon-img-alt" src={iconPython} alt="icon" />
+          <p className="about__tech-icon-name">Python</p>
         </li>
         <li className="about__tech-icon">
-          <img className="about__tech-icon-img" src={iconHtml} alt="icon" />
-          <p className="about__tech-icon-name">HTML</p>
+          <img className="about__tech-icon-img" src={iconExpress} alt="icon" />
+          <p className="about__tech-icon-name">express.js</p>
+        </li>
+        <li className="about__tech-icon">
+          <img className="about__tech-icon-img" src={iconNode} alt="icon" />
+          <p className="about__tech-icon-name">Node.js</p>
+        </li>
+        <li className="about__tech-icon">
+          <img className="about__tech-icon-img" src={iconMongo} alt="icon" />
+          <p className="about__tech-icon-name">MongoDB</p>
+        </li>
+        <li className="about__tech-icon">
+          <img className="about__tech-icon-img" src={iconFigma} alt="icon" />
+          <p className="about__tech-icon-name">Figma</p>
         </li>
       </ul>
     </div>

@@ -10,7 +10,7 @@
 }
 
 .about__tech-icon:hover {
-    transform: scale(2);
+    transform: scale(1.4);
     transition: .2s 0s ease;
     filter: none;
     z-index: 1;
@@ -22,13 +22,14 @@
     transition: .2s 0s ease;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1150px) {
     .about__tech-icon {
         border-radius: 20px;
     }
 
     .about__tech-icon:hover {
         background-color: rgba(0,0,0,.7);
+        transform: scale(1.4);
     }
 }
 

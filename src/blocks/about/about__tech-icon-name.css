@@ -6,7 +6,7 @@
     text-align: center;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1150px) {
     .about__tech-icon-name {
         margin-top: 0;
         margin-bottom: 1rem;

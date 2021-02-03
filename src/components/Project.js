@@ -27,8 +27,8 @@ export default function Project(props) {
                     ))}
                 </div>
                 <button className="project__btn" onClick={handleDetailsClick}>Details</button>
-                <a className="project__btn" href={props.data.links.ghLink} target="_blank" rel="noreferrer">View Code</a>
-                <a className="project__btn" href={props.data.links.demoLink} target="_blank" rel="noreferrer">View Project</a>
+                <a className="project__btn" href={props.data.links.ghLink} target="_blank" rel="noreferrer">View Code <i class="project__btn_link fas fa-external-link-alt"></i></a>
+                <a className="project__btn" href={props.data.links.demoLink} target="_blank" rel="noreferrer">View Project <i class="project__btn_link fas fa-external-link-alt"></i></a>
             </div>
         </li>
     )
