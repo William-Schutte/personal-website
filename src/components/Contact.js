@@ -15,11 +15,11 @@ function Contact() {
   return (
     <div className="contact">
       <h2 className="contact__title"
-        data-aos="zoom-out"
+        data-aos="fade-left"
         data-aos-delay="0"
         data-aos-duration="1000">Contact Me</h2>
       <div className="contact__container"
-        data-aos="zoom-out"
+        data-aos="fade-left"
         data-aos-delay="50"
         data-aos-duration="1000">
         <a className="contact__item" href="mailto:williamdschutte@gmail.com" target="_blank" rel="noreferrer">

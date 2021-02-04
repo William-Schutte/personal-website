@@ -15,6 +15,7 @@
     background-size: cover; 
     padding: 8vw;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 @media screen and (max-width: 768px) {

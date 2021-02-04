@@ -11,3 +11,9 @@
         width: 100%;
     }
 }
+
+@media screen and (max-width: 900px) {
+    .about__tech {
+        padding: 0 0 60px;
+    }
+}

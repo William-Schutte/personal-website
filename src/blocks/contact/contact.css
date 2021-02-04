@@ -7,4 +7,5 @@
 .contact {
     background-color: rgba(33, 66, 82, 0.94);
     color: #fff;
+    overflow: hidden;
 }
