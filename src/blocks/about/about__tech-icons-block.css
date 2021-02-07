@@ -3,15 +3,14 @@
     max-width: 1200px;
     margin: 64px auto;
     justify-content: space-around;
-
 }
 
 .about__tech-icons-block:hover .about__tech-icon {
-    filter: blur(2px);
+    filter: opacity(.4);
 }
 
 .about__tech-icons-block:hover .about__tech-icon:hover {
-    filter: none;
+    filter: drop-shadow(16px 16px 10px rgba(0,0,0,.4));
 }
 
 @media screen and (max-width: 1150px) {

@@ -20,42 +20,42 @@ function Tech() {
     <div className="about__tech">
       <h3 className="about__title"
         data-aos="fade-left"
-        data-aos-delay="50"
+        data-aos-delay="0"
         data-aos-duration="1000">Technologies</h3>
       <ul className="about__tech-icons-block"
         data-aos="flip-up"
         data-aos-delay="150"
         data-aos-duration="1000">
         <li className="about__tech-icon">
-          <img className="about__tech-icon-img" src={iconReact} alt="icon" />
+          <img className="about__tech-icon-img" src={iconReact} alt="React icon" />
           <p className="about__tech-icon-name">React</p>
         </li>
         <li className="about__tech-icon">
-          <img className="about__tech-icon-img" src={iconGatsby} alt="icon" />
+          <img className="about__tech-icon-img" src={iconGatsby} alt="Gatsby icon" />
           <p className="about__tech-icon-name">Gatsby</p>
         </li>
         <li className="about__tech-icon">
-          <img className="about__tech-icon-img-alt" src={iconJs} alt="icon" />
+          <img className="about__tech-icon-img-alt" src={iconJs} alt="JS icon" />
           <p className="about__tech-icon-name">JavaScript</p>
         </li>
         <li className="about__tech-icon">
-          <img className="about__tech-icon-img-alt" src={iconPython} alt="icon" />
+          <img className="about__tech-icon-img" src={iconPython} alt="Python icon" />
           <p className="about__tech-icon-name">Python</p>
         </li>
         <li className="about__tech-icon">
-          <img className="about__tech-icon-img" src={iconExpress} alt="icon" />
+          <img className="about__tech-icon-img" src={iconExpress} alt="Express icon" />
           <p className="about__tech-icon-name">express.js</p>
         </li>
         <li className="about__tech-icon">
-          <img className="about__tech-icon-img" src={iconNode} alt="icon" />
+          <img className="about__tech-icon-img" src={iconNode} alt="Node icon" />
           <p className="about__tech-icon-name">Node.js</p>
         </li>
         <li className="about__tech-icon">
-          <img className="about__tech-icon-img" src={iconMongo} alt="icon" />
+          <img className="about__tech-icon-img" src={iconMongo} alt="Mongo icon" />
           <p className="about__tech-icon-name">MongoDB</p>
         </li>
         <li className="about__tech-icon">
-          <img className="about__tech-icon-img" src={iconFigma} alt="icon" />
+          <img className="about__tech-icon-img" src={iconFigma} alt="Figma icon" />
           <p className="about__tech-icon-name">Figma</p>
         </li>
       </ul>
