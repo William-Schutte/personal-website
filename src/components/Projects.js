@@ -22,7 +22,6 @@ export default function Projects(props) {
 					))}
 				</ul>
 			</div>
-
 		</div>
 	);
 }

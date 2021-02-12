@@ -51,7 +51,7 @@ class Project {
 
 const p0 = new Project({ 
     name: "Iterative.ai Landing Page", 
-    ghLink: "https://github.com/William-Schutte/iterative-landing",
+    ghLink: false,
     demoLink: "https://iterative.ai/",
     description: [
         "Iterative.ai, a data science and machine learning version control platform, came to us wanting a new static landing page built with Gatsby.", 

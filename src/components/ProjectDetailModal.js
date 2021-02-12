@@ -27,9 +27,11 @@ function ProjectDetailModal(props) {
                         {props.project.description.map((text, i) => (
                             <p key={`description-${i}`} className="modal__description">{text}</p>
                         ))}
-                        
+
                         <div className="modal__links">
-                            <a className="modal__link-btn" href={props.project.links.ghLink} target="_blank" rel="noreferrer">View Code</a>
+                            {props.project.links.ghLink && (
+                                <a className="modal__link-btn" href={props.project.links.ghLink} target="_blank" rel="noreferrer">View Code</a>
+                            )}
                             <a className="modal__link-btn" href={props.project.links.demoLink} target="_blank" rel="noreferrer">View Project</a>
                             <button className="modal__link-btn modal__link-btn_secondary" onClick={props.closeModal}>Back</button>
                         </div>
