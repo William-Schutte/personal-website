@@ -9,7 +9,7 @@
     "aos": "^2.3.4",
     "gsap": "^3.5.1",
     "netlify-cli": "^2.68.4",
-    "node-sass": "^5.0.0",
+    "node-sass": "^7.0.0",
     "react": "^17.0.1",
     "react-awesome-slider": "^4.1.0",
     "react-dom": "^17.0.1",
